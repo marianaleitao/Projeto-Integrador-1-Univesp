@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "matricula": "100001",
+        "nome": "Carlos Augusto",
+        "funcao": "Estagiário"
+    },
+    {
+        "id": 2,
+        "matricula": "200002",
+        "nome": "José Anderson",
+        "funcao": "Comprador"
+    },
+    {
+        "id": 3,
+        "matricula": "300003",
+        "nome": "Mariana Brisolla",
+        "funcao": "Compradora"
+    },
+    {
+        "id": 4,
+        "matricula": "400004",
+        "nome": "Thereza Furtado",
+        "funcao": "Supervisora"
+    }
+]

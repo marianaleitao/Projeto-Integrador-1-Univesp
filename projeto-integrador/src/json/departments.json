@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "tramite": 10,
+        "nome": "Secretaria de Educação"
+    },
+    {
+        "id": 2,
+        "tramite": 20,
+        "nome": "Secretaria de Administração e Planejamento"
+    },
+    {
+        "id": 3,
+        "tramite": 30,
+        "nome": "Secretaria de Finanças"
+    },
+    {
+        "id": 4,
+        "tramite": 40,
+        "nome": "Secretaria de Cultura"
+    },
+    {
+        "id": 5,
+        "tramite": 50,
+        "nome": "Departamento de Licitação"
+    },
+    {
+        "id": 6,
+        "tramite": 60,
+        "nome": "Departamento de Contabilidade"
+    }
+]
