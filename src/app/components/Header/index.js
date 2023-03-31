@@ -6,7 +6,7 @@ import styles from './Header.module.css';
 function Header() {
     return (
         <header>
-            <Navbar bg="dark" variant="dark" fixed="top">
+            <Navbar bg="dark" variant="dark">
                 <Container fluid className="justify-content-around">
                     <Navbar.Brand className={styles.brand}>
                         <span>Sistema de Controle de Entrada</span>

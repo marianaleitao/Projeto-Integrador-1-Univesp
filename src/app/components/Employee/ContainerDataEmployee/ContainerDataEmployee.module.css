@@ -1,0 +1,18 @@
+.card {
+    margin: 10px auto;
+    text-align: center;
+    width: 350px;
+}
+
+.card h2 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: white;
+   
+}
+
+.card h3 {
+    display: inline;
+    margin-right: 5px;
+    font-size: 1.3rem;
+}
