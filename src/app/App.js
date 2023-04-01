@@ -1,14 +1,13 @@
 import './App.css';
-import Employee from './components/Employee';
+import AppRoutes from './routes';
 import Footer from './components/Footer';
 import Header from './components/Header';
-
 
 function App() {
   return (
     <>
       <Header />
-        <Employee />
+      <AppRoutes />
       <Footer />
     </>
   );
