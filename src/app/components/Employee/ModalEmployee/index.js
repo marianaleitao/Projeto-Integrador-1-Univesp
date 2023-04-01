@@ -11,7 +11,7 @@ function ModalEmployee() {
 
     return (
         <>
-            <Button variant="dark" onClick={handleShow}>NOVO FUNCIONÁRIO</Button>
+            <Button variant="outline-dark" onClick={handleShow}>NOVO FUNCIONÁRIO</Button>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Funcionário</Modal.Title>
