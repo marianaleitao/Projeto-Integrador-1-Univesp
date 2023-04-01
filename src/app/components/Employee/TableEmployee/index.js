@@ -1,9 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
-import TBodyDataEmployee from '../TBodyDataEmployee';
-import styles from './TableEmployee.module.css';
 //import { useState, useEffect } from 'react';
 import employees from '../../../../json/employees.json';
+import TBodyDataEmployee from '../TBodyDataEmployee';
+import styles from './TableEmployee.module.css';
+import ModalEmployee from '../ModalEmployee';
 
 function Employee() {
     // const [employees, setEmployees] = useState([]);
@@ -19,22 +20,28 @@ function Employee() {
     // }, []);
 
     return (
-        <Container fluid className={styles.container}>
-            <Table bordered hover>
-                <thead>
-                    <tr>
-                        <th>Matrícula</th>
-                        <th>Nome</th>
-                        <th>Função</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        employees?.map((employee) => <TBodyDataEmployee employee={employee} key={employee.id} />)
-                    }
-                </tbody>
-            </Table>
-        </Container>
+        <>
+
+            <Container fluid className={styles.container}>
+                <section className={styles.modal}>
+                    <ModalEmployee />
+                </section>
+                <Table bordered hover className={styles.tabela}>
+                    <thead>
+                        <tr>
+                            <th>Matrícula</th>
+                            <th>Nome</th>
+                            <th>Função</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            employees?.map((employee) => <TBodyDataEmployee employee={employee} key={employee.id} />)
+                        }
+                    </tbody>
+                </Table>
+            </Container>
+        </>
     );
 }
 
