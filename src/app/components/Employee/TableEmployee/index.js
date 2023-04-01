@@ -1,24 +1,22 @@
 import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
 import TBodyDataEmployee from '../TBodyDataEmployee';
-//import employees from '../../../json/employees.json';
 import styles from './TableEmployee.module.css';
-import { useState, useEffect } from 'react';
-
+//import { useState, useEffect } from 'react';
+import employees from '../../../../json/employees.json';
 
 function Employee() {
-    const [employees, setEmployees] = useState([]);
-    useEffect(() => {
-        fetch("http://localhost:8080/pmi/compras/funcionarios", {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
-            .then((response) => response.json())
-            .then((data) => setEmployees(data))
-            .catch((error) => alert("Erro ao carregar dados. " + error));
-    }, []);
+    // const [employees, setEmployees] = useState([]);
+    // useEffect(() => {
+    //     fetch("http://localhost:8080/api/employees", {
+    //         method: 'GET',
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         }})
+    //             .then((response) => response.json())
+    //             .then((data) => setEmployees(data))
+    //             .catch((error) => alert("Erro ao carregar dados dos funcionários. " + error));
+    // }, []);
 
     return (
         <>
@@ -33,7 +31,7 @@ function Employee() {
                     </thead>
                     <tbody>
                         {
-                            employees?.map((employee) => <TBodyDataEmployee employee={employee} key={employee.funcionarioId} />)
+                            employees?.map((employee) => <TBodyDataEmployee employee={employee} key={employee.id} />)
                         }
                     </tbody>
                 </Table>

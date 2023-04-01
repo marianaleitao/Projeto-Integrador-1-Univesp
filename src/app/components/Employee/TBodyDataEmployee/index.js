@@ -1,11 +1,11 @@
-function ContainerDataEmployee({ employee }) {
+function TBodyDataEmployee({ employee }) {
     return (
         <tr>
-            <td> { employee.funcionarioMatricula } </td>
-            <td> { employee.funcionarioNome } </td>
-            <td> { employee.funcionarioFuncao } </td>
+            <td> { employee.matricula } </td>
+            <td> { employee.nome } </td>
+            <td> { employee.funcao } </td>
         </tr>
     );
 }
 
-export default ContainerDataEmployee;
+export default TBodyDataEmployee;
