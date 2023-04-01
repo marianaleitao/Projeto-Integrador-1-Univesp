@@ -7,7 +7,7 @@ function AppRoutes() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<DocumentPage />}></Route>
-                <Route path="/employee" element={<EmployeePage />}></Route>
+                <Route path="/employees" element={<EmployeePage />}></Route>
             </Routes>
         </BrowserRouter>
     );

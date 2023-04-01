@@ -19,24 +19,22 @@ function Employee() {
     // }, []);
 
     return (
-        <>
-            <Container fluid className={styles.container}>
-                <Table>
-                    <thead>
-                        <tr>
-                            <th>Matrícula</th>
-                            <th>Nome</th>
-                            <th>Função</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            employees?.map((employee) => <TBodyDataEmployee employee={employee} key={employee.id} />)
-                        }
-                    </tbody>
-                </Table>
-            </Container>
-        </>
+        <Container fluid className={styles.container}>
+            <Table bordered hover>
+                <thead>
+                    <tr>
+                        <th>Matrícula</th>
+                        <th>Nome</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        employees?.map((employee) => <TBodyDataEmployee employee={employee} key={employee.id} />)
+                    }
+                </tbody>
+            </Table>
+        </Container>
     );
 }
 

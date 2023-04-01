@@ -19,27 +19,25 @@ function TableDocument() {
     // }, []);
 
     return (
-        <>
-            <Container fluid>
-                <Table className={styles.tabela}>
-                    <thead>
-                        <tr>
-                            <th>Protocolo</th>
-                            <th>Requisição</th>
-                            <th>Modalidade</th>
-                            <th>Origem</th>
-                            <th>Descrição</th>
-                            <th>Comprador</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            {
-                                documents?.map((document) => <TBodyDataDocument document={document} key={document.id} />)
-                            }
-                        </tbody>
-                </Table>
-            </Container>
-        </>
+        <Container fluid className={styles.container}>
+            <Table className={styles.tabela} bordered hover>
+                <thead>
+                    <tr>
+                        <th>Protocolo</th>
+                        <th>Requisição</th>
+                        <th>Modalidade</th>
+                        <th>Origem</th>
+                        <th>Descrição</th>
+                        <th>Comprador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        documents?.map((document) => <TBodyDataDocument document={document} key={document.id} />)
+                    }
+                </tbody>
+            </Table>
+        </Container>
     );
 }
 
