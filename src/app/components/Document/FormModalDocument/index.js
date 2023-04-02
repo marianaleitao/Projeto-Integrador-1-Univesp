@@ -2,6 +2,8 @@ import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import employees from '../../../../json/employees.json';
+import departments from '../../../../json/departments.json';
 
 function FormModalDocument() {
     return (
@@ -26,7 +28,10 @@ function FormModalDocument() {
                         <Form.Group className="mb-3" controlId="formModalidade">
                             <Form.Label>Modalidade da Compra</Form.Label>
                             <Form.Select>
-                                <option>Modalidade</option>
+                                <option value="1">ATA</option>
+                                <option value="2">Compra Direta</option>
+                                <option value="3">Licitação</option>
+                                <option value="4">Anulação</option>
                             </Form.Select>
                         </Form.Group>
                     </Col>
@@ -34,7 +39,9 @@ function FormModalDocument() {
                         <Form.Group className="mb-3" controlId="formOrigem">
                             <Form.Label>Departamento de Origem</Form.Label>
                             <Form.Select>
-                                <option>Origem</option>
+                                {
+                                    departments.map((department) => <option value={department.id} key={department.id}>{department.nome}</option>)
+                                }
                             </Form.Select>
                         </Form.Group>
                     </Col>
@@ -42,7 +49,9 @@ function FormModalDocument() {
                         <Form.Group className="mb-3" controlId="formComprador">
                             <Form.Label>Comprador</Form.Label>
                             <Form.Select>
-                                <option>Comprador</option>
+                                {
+                                    employees.map((employee) => <option value={employee.id} key={employee.id}>{employee.nome}</option>)
+                                }
                             </Form.Select>
                         </Form.Group>
                     </Col>

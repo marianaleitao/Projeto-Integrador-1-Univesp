@@ -11,7 +11,7 @@ function ModalDocument() {
     return (
         <>
             <Button variant="outline-dark" onClick={handleShow}>NOVO PROCESSO</Button>
-            <Modal show={show} onHide={handleClose} size="lg">
+            <Modal show={show} onHide={handleClose} size="xl">
                 <Modal.Header closeButton>
                     <Modal.Title>Processo</Modal.Title>
                 </Modal.Header>
