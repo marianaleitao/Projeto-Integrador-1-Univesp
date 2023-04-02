@@ -6,3 +6,7 @@
 .tabela thead {
     text-align: center;
 }
+
+.modal {
+    margin: .8rem;
+}
