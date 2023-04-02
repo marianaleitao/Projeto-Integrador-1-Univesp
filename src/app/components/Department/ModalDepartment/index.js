@@ -20,8 +20,8 @@ function ModalDepartment() {
                     <FormModalDepartment />
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={handleClose}>Cancelar</Button>
-                    <Button>Salvar</Button>
+                    <Button onClick={handleClose} variant="outline-dark">Cancelar</Button>
+                    <Button variant="dark">Salvar</Button>
                 </Modal.Footer>
             </Modal>
         </>

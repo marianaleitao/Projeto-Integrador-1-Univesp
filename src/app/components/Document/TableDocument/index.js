@@ -4,6 +4,7 @@ import Table from 'react-bootstrap/Table';
 import TBodyDataDocument from '../TBodyDataDocument';
 import documents from '../../../../json/documents.json';
 import styles from './TableDocument.module.css';
+import ModalDocument from '../ModalDocument';
 
 function TableDocument() {
     // const [documents, setDocuments] = useState([]);
@@ -20,6 +21,9 @@ function TableDocument() {
 
     return (
         <Container fluid className={styles.container}>
+            <section className={styles.modal}>
+                <ModalDocument />
+            </section>
             <Table className={styles.tabela} bordered hover>
                 <thead>
                     <tr>
