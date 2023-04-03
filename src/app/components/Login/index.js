@@ -9,7 +9,7 @@ function Login() {
     return (
         <Container className={styles.container}>
             <Row>
-                <Col>
+                <Col >
                     <Form>
                         <Form.Group className="mb-3" controlId="formUsername">
                             <Form.Label>Usuário</Form.Label>
