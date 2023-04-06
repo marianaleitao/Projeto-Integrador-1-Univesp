@@ -17,6 +17,7 @@ function TableDepartment() {
                         <tr>
                             <th>Número Trâmite</th>
                             <th>Nome do Departamento</th>
+                            <th>Ações</th>
                         </tr>
                     </thead>
                     <tbody>

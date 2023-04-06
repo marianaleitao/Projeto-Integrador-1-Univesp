@@ -1,4 +1,5 @@
 import EditModalDocument from "../EditModalDocument";
+import styles from './TBodyDataDocument.module.css';
 
 function TBodyDataDocument({ document }) {
     console.log(document)
@@ -10,7 +11,7 @@ function TBodyDataDocument({ document }) {
             <td>{document.origem.nome}</td>
             <td>{document.descricao}</td>
             <td>{document.comprador.nome} </td>
-            <td>
+            <td className={styles.acoes}>
                 <EditModalDocument document={document} key={document.id}/>
             </td>
         </tr>

@@ -32,6 +32,7 @@ function Employee() {
                             <th>Matrícula</th>
                             <th>Nome</th>
                             <th>Função</th>
+                            <th>Ações</th>
                         </tr>
                     </thead>
                     <tbody>
