@@ -33,11 +33,12 @@ function TableDocument() {
                         <th>Origem</th>
                         <th>Descrição</th>
                         <th>Comprador</th>
+                        <th>Ações</th>
                     </tr>
                 </thead>
                 <tbody>
                     {
-                        documents?.map((document) => <TBodyDataDocument document={document} key={document.id} />)
+                        documents?.map((document) => <TBodyDataDocument document={document} key={document.id}/>)
                     }
                 </tbody>
             </Table>
