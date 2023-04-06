@@ -4,17 +4,35 @@
         "protocolo": "12123/1/2023",
         "requisicao": "2322",
         "modalidade": "Compra direta",
-        "origem": "Secretaria de Esportes e Lazer",
+        "origem": {
+            "id": 1,
+            "tramite": 10,
+            "nome": "Secretaria de Educação"
+        },
         "descricao": "Bola de futebol de campo e jogo de coletes com 10 peças.",
-        "comprador": "João da Silva"
+        "comprador": {
+            "id": 2,
+            "matricula": "200002",
+            "nome": "José Anderson",
+            "funcao": "Comprador"
+        }
     },
     {
         "id": 2,
         "protocolo": "3223/1/2023",
         "requisicao": "4222",
         "modalidade": "Licitação",
-        "origem": "Secretaria de Educação",
+        "origem": {
+            "id": 3,
+            "tramite": 30,
+            "nome": "Secretaria de Finanças"
+        },
         "descricao": "Carderno de uma matéria, caixa de lápis de cor e lápis preto",
-        "comprador": "Maria das Dores"
+        "comprador": {
+            "id": 3,
+            "matricula": "300003",
+            "nome": "Mariana",
+            "funcao": "Compradora"
+        }
     }
 ]
